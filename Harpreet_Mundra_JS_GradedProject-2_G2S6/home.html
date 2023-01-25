@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume page</title>
+    <!-- <script src="js/tailwind.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="resume">
+        <section>
+            <button type="button" onclick="prev()" class="btn btn-primary" id="prev">Prev</button>
+            <div id="search"></div>
+            <button type="button" onclick="next()" class="btn btn-primary" id="next">Next</button>
+            <form autocomplete="off">
+                <div>
+                    <input type="text" id="input" placeholder="Search " />
+                </div>
+                <ul class="list"></ul>
+            </form>
+        </section>
+        <section>
+            <header>
+                <div class="left">
+                    <h2 id="name"></h2>
+                    <h5 id="applied"></h5>
+                </div>
+                <div class="right">
+                    <img src="./images/profile.png" alt="">
+                </div>
+            </header>
+        </section>
+        <section>
+            <div id="left">
+                <h6>Personal Information</h6>
+                <ul>
+                    <li id="email"></li>
+                    <li id="phone"></li>
+                    <li id="Linkedin"></li>
+                </ul>
+                <h6>Address</h6>
+                <ul>
+                    <li id="address"></li>
+                    <li id="postalCode"></li>
+                    <li id="city"></li>
+                    <li id="state"></li>
+                </ul>
+                <h6>Technical Skills</h6>
+                <ul id="skills"></ul>
+                <h6>Hobbies</h6>
+                <ul id="hobbies"></ul>
+            </div>
+            <div id="right">
+                <div class="work">
+                    <h5>Work Experience in Previous company</h5>
+                    <ul>
+                        <li><b>Company Name: </b><span id="Company"></span></li>
+                        <li><b>Position: </b> <span id="Position"></span></li>
+                        <li><b>start Date: </b> <span id="Start"></span></li>
+                        <li><b>End Date: </b> <span id="End"></span></li>
+                        <li><b>Summary: </b><span id="Summary"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Projects">
+                    <h5>Projects</h5>
+                    <ul>
+                        <li><b><span id="pname"></span></b>:
+                            <span id="description">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Education">
+                    <h5>Education</h5>
+                    <ul>
+                        <li><b>UG: </b>
+                            <ul>
+                                <li><b>institute: </b><span id="ugi"></span></li>
+                                <li><b>course: </b><span id="ugc"></span></li>
+                                <li><b>Start Date: </b><span id="ugs"></span></li>
+                                <li><b>End Date: </b><span id="uge"></span></li>
+                                <li><b>cgpa: </b><span id="ugcg"></span></li>
+                            </ul>
+                        </li>
+                        <li><b>Senior Secondary: </b>
+                            <ul>
+                                <li><b>institute: </b><span id="ssi"></span></li>
+                                <li><b>cgpa: </b><span id="ssc"></span></li>
+                            </ul>
+                        </li>
+                        <li><b>High School: </b>
+                            <ul>
+                                <li><b>institute: </b><span id="hsi"></span></li>
+                                <li><b>cgpa: </b><span id="hsc"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Internship">
+                    <h5>Internship</h5>
+                    <ul>
+                        <li><b>Company Name: </b><span id="iCompany"></span></li>
+                        <li><b>Position: </b> <span id="iPosition"></span></li>
+                        <li><b>start Date: </b> <span id="iStart"></span></li>
+                        <li><b>End Date: </b> <span id="iEnd"></span></li>
+                        <li><b>Summary: </b><span id="iSummary"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Achievements</h5>
+                    <ul>
+                        <li id="achievements"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="json.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
